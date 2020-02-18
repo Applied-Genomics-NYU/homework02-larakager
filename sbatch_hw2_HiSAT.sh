@@ -7,7 +7,7 @@
 #SBATCH --mem=4GB
 #SBATCH --job-name=MYJOB
 #SBATCH --output=slurm_%j.out
-module load hisat2/intel/0.7.17
+module load hisat2/intel/2.0.5
 hisat2-build Arabidopsis.fa index
 for read in ./*_1.fastq
 do
